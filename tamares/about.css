@@ -1,0 +1,236 @@
+/* style of about */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  <!-- font-family: 'Poppins',sans-serif; -->
+  text-decoration:none;
+}
+@import url('https://fonts.cdnfonts.com/css/stickywild');
+@import url('https://fonts.cdnfonts.com/css/kosugi-maru');
+@import url('https://fonts.cdnfonts.com/css/amestina');
+@import url('https://fonts.cdnfonts.com/css/ningst-only-peace');
+
+.tifinagh .desc {
+  visibility: hidden;
+  width:200px;
+  font-size:10px;
+  background-color: #ffefcb;
+  color: #226d56;
+  text-align: center;
+  border-radius: 6px;
+  padding:2px;
+  top:auto;
+  left:auto;
+  margin-top: 15px;
+  text-decoration:none;
+  font-family: 'Poppins',sans-serif;
+ 
+  
+}
+.tifinagh:hover .desc {
+  visibility: visible;
+}
+
+.menu ul li a  
+{
+  text-decoration:none;
+    color: #ffefcb;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 8px 15px;
+  font-family: 'Kosugi Maru', sans-serif;
+}
+.menu li
+{ 
+  display: inline;
+}
+nav 
+{
+   background-color: #226d56;
+   width: 100%;
+   padding: 10px 0;
+   font-family: 'Kosugi Maru', sans-serif;
+  
+}
+nav .menu
+{
+   max-width: 1250px;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20px;
+   font-family: 'Kosugi Maru', sans-serif;
+}
+
+.menu .logo a
+{
+  color: #ffefcb;
+  font-size: 35px;
+  font-weight: 600;
+  text-decoration:none;
+  font-family: 'Kosugi Maru', sans-serif;
+}
+.menu ul li{
+  margin-left: 25px;
+  
+}
+.menu ul li a:hover{
+	background-color:#4a9b82;
+	border-radius:3px;
+	
+}
+.jj
+{
+   position:absolute;
+   display:none;
+   background-color:#226d56;
+   margin:2px 350px;
+   color:white;
+   border-radius:3px;
+}
+
+.Mywork:hover .jj
+{
+	
+	display:grid;
+	
+	
+}
+body
+{
+   background-color:#ffefcb;
+  
+   
+}
+.part1
+{
+    display: flex;
+}
+.part2
+{
+    display: flex;
+	margin-right:70px;
+}
+.pic1
+{
+  margin-left:30px;
+  margin-top:15px;
+}
+.who
+{
+  margin-left:380px;
+  margin-top:90px;
+  color:#f36e52;
+  font-family: 'Stickywild', sans-serif;
+  font-size:35px;
+}
+.pic2
+{
+  margin-left:380px;
+}
+.why
+{
+  margin-left:200px;
+  margin-top:70px;
+  color:#f36e52;
+  font-family: 'Stickywild', sans-serif;
+  font-size:35px;
+}
+.p1
+{ 
+  margin-left:200px;
+  margin-right:40px;
+  margin-top:20px;
+  line-height: 1.4;
+  color:#226d56;
+  font-family: 'Ningst Only Peace', sans-serif;
+  font-size:19px;
+}
+.p2
+{ 
+  margin-left:70px;
+  margin-top:20px;
+  line-height: 1.4;
+  color:#226d56;
+  font-family: 'Ningst Only Peace', sans-serif;
+  font-size:19px;
+}
+
+footer
+{
+   background-color: #226d56;
+   width: 100%;
+   padding: 7px 0;
+   color: #ffefcb;
+   
+}
+
+.socialmedia
+{
+  text-align:center;
+  font-family: 'Ningst Only Peace', sans-serif;
+  margin-top:3px;
+}
+.footerelements
+{
+ text-align:center;
+}
+.titeloffooter
+{
+  text-align:center;
+  font-size:32px;
+  font-family: 'Amestina', sans-serif;
+  
+}
+.quotefooter
+{
+  font-family: 'Ningst Only Peace', sans-serif;
+  font-size:18px;
+}
+.fa {
+  padding: 8px;
+  font-size: 18px;
+  width: 35px;
+  height:33px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px ;
+  border-radius:15%;
+}
+.fa-facebook 
+{
+  background: #3B5998;
+  color: white;
+}
+.fa-google 
+{
+  background: #dd4b39;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #f40083;
+  color: white;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.bywidad
+{
+  border-top:solid #ffefcb 1px;
+  font-size:15px;
+  font-family: 'Ningst Only Peace', sans-serif;
+  text-align:center;
+  height
+  
+}
+
+
+
