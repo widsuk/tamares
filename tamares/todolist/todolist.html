@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="todolist.css">  
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.cdnfonts.com/css/stickywild" rel="stylesheet">
+	<link href="https://fonts.cdnfonts.com/css/ningst-only-peace" rel="stylesheet">
+    <script>
+      function ajouter(form) {
+        var task = document.getElementById("itms").value;
+        if (task !== '') {
+          var table = document.getElementById("tasks");
+
+          // anag star gi tabel 
+          var row = table.insertRow();
+		  
+		  //anag ijan khana  / ataksi checkbox n done
+		  var lkhana1= row.insertCell(0);
+		  
+		  //an3ama lkhana s checkbox ni/ anag function n text decuration dagas
+		  lkhana1.innerHTML= '<input type="checkbox" onchange="textdecuration(this)">'
+
+          // anag ijan lkhana wis 2 gi star ni injini / ataksi value n input ni
+          var lkhana2 = row.insertCell(1);
+          lkhana2.innerHTML = task;
+
+          //anag ijan lkhana wis 3 / ataksi lbutton ni n delete
+          var lkhana3 = row.insertCell(2);
+		  
+		  // an3ama khana wis 3 s button ni / anag funtion ni n delete dagas
+         lkhana3.innerHTML = '<i id="deleteIcon" class="fa fa-trash-can" onclick="deleteRow(this)"></i>';
+
+		 
+
+          // korma n3amad kh add ni input tadwar takhwa
+          document.getElementById("itms").value = '';
+        }
+      }
+	   //change color / done
+	  function textdecuration(checkbox)
+	  {
+	    //checkbox.parentNode = <td> , checkbox.parentNode.parentNode = <tr>
+	    var row = checkbox.parentNode.parentNode;
+		var celltxt = row.cells[1];
+		if(checkbox.checked){
+		    celltxt.style.textDecoration= 'line-through';
+		}
+		else{
+		    celltxt.style.textDecoration ='';
+		}
+	  }
+
+      // Function to delete the corresponding row
+        function deleteRow(icon) {
+          var row = icon.parentNode.parentNode;
+          row.parentNode.removeChild(row);
+      }
+      
+    </script>
+  </head>
+  
+  <body> 
+    <div>
+      <h1>To-Do List</h1>
+      <form name="formulaire">
+        <input type="text" id="itms" placeholder="Add new todo">
+        <input type="button" id="add-button" value="Add" onclick='ajouter(this.form)'>
+      </form>
+      <h3>Task List</h3>
+      <table id="tasks">
+        <thead>
+        </thead>
+      </table>
+    </div>
+  </body>  
+</html>
